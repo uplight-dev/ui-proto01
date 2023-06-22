@@ -14,7 +14,7 @@ const PADDING_VERTICAL = 'PADDING_VERTICAL2';
 
 const DEFAULT_APPEARANCE = {
     [BORDER_RADIUS]: 0,
-    [DefaultAppearance.BACKGROUND_COLOR]: 0xFFFFFF,
+    //[DefaultAppearance.BACKGROUND_COLOR]: 0xFFFFFF,
     [DefaultAppearance.FONT_SIZE]: CommonTheme.CONTROL_FONT_SIZE,
     [DefaultAppearance.FOREGROUND_COLOR]: 0,
     [DefaultAppearance.STROKE_COLOR]: CommonTheme.CONTROL_BORDER_COLOR,
