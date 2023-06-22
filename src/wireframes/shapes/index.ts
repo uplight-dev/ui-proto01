@@ -11,11 +11,11 @@ import { Icon, Image, Raster, Rectangle, Shape } from './dependencies';
 import { AbstractControl } from './utils/abstract-control';
 
 export function registerRenderers() {
+    RendererService.addRenderer(new AbstractControl(new Icon()));
     RendererService.addRenderer(new AbstractControl(new Image()));
+    RendererService.addRenderer(new AbstractControl(new Raster()));
     RendererService.addRenderer(new AbstractControl(new Rectangle()));
     RendererService.addRenderer(new AbstractControl(new Shape()));
-    RendererService.addRenderer(new AbstractControl(new Icon()));
-    RendererService.addRenderer(new AbstractControl(new Raster()));
     
     /*RendererService.addRenderer(new AbstractControl(new Browser()));
     RendererService.addRenderer(new AbstractControl(new Button()));
