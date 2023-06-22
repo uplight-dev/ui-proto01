@@ -10,7 +10,8 @@ import { Browser, Button, ButtonBar, Checkbox, ComboBox, Comment, Dropdown, Grid
 import { AbstractControl } from './utils/abstract-control';
 
 export function registerRenderers() {
-    RendererService.addRenderer(new AbstractControl(new Browser()));
+    RendererService.addRenderer(new AbstractControl(new Image()));
+    /*RendererService.addRenderer(new AbstractControl(new Browser()));
     RendererService.addRenderer(new AbstractControl(new Button()));
     RendererService.addRenderer(new AbstractControl(new ButtonBar()));
     RendererService.addRenderer(new AbstractControl(new Checkbox()));
@@ -21,7 +22,6 @@ export function registerRenderers() {
     RendererService.addRenderer(new AbstractControl(new HorizontalLine()));
     RendererService.addRenderer(new AbstractControl(new HorizontalScrollbar()));
     RendererService.addRenderer(new AbstractControl(new Icon()));
-    RendererService.addRenderer(new AbstractControl(new Image()));
     RendererService.addRenderer(new AbstractControl(new Label()));
     RendererService.addRenderer(new AbstractControl(new Link()));
     RendererService.addRenderer(new AbstractControl(new List()));
@@ -42,5 +42,5 @@ export function registerRenderers() {
     RendererService.addRenderer(new AbstractControl(new VerticalLine()));
     RendererService.addRenderer(new AbstractControl(new VerticalScrollbar()));
     RendererService.addRenderer(new AbstractControl(new Window()));
-    RendererService.addRenderer(new AbstractControl(new Comment()));
+    RendererService.addRenderer(new AbstractControl(new Comment()));*/
 }
