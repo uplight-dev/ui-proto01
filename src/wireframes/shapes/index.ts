@@ -6,7 +6,8 @@
 */
 
 import { RendererService } from '@app/wireframes/model/renderer.service';
-import { Browser, Button, ButtonBar, Checkbox, ComboBox, Comment, Dropdown, Grid, Heading, HorizontalLine, HorizontalScrollbar, Icon, Image, Label, Link, List, Numeric, Paragraph, Phone, Progress, RadioButton, Raster, Rectangle, Shape, Slider, Tablet, Tabs, TextArea, TextInput, Toggle, VerticalLine, VerticalScrollbar, Window } from './dependencies';
+//import { Browser, Button, ButtonBar, Checkbox, ComboBox, Comment, Dropdown, Grid, Heading, HorizontalLine, HorizontalScrollbar, Icon, Image, Label, Link, List, Numeric, Paragraph, Phone, Progress, RadioButton, Raster, Rectangle, Shape, Slider, Tablet, Tabs, TextArea, TextInput, Toggle, VerticalLine, VerticalScrollbar, Window } from './dependencies';
+import { Image } from './dependencies';
 import { AbstractControl } from './utils/abstract-control';
 
 export function registerRenderers() {
