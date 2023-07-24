@@ -7,7 +7,7 @@
 
 import { RendererService } from '@app/wireframes/model/renderer.service';
 //import { Browser, Button, ButtonBar, Checkbox, ComboBox, Comment, Dropdown, Grid, Heading, HorizontalLine, HorizontalScrollbar, Icon, Image, Label, Link, List, Numeric, Paragraph, Phone, Progress, RadioButton, Raster, Rectangle, Shape, Slider, Tablet, Tabs, TextArea, TextInput, Toggle, VerticalLine, VerticalScrollbar, Window } from './dependencies';
-import { Icon, Image, Raster, Rectangle, Shape } from './dependencies';
+import { Label, Icon, Image, Raster, Rectangle, Shape } from './dependencies';
 import { AbstractControl } from './utils/abstract-control';
 
 export function registerRenderers() {
@@ -15,6 +15,7 @@ export function registerRenderers() {
     RendererService.addRenderer(new AbstractControl(new Image()));
     RendererService.addRenderer(new AbstractControl(new Raster()));
     RendererService.addRenderer(new AbstractControl(new Rectangle()));
+    RendererService.addRenderer(new AbstractControl(new Label()));
     RendererService.addRenderer(new AbstractControl(new Shape()));
     
     /*RendererService.addRenderer(new AbstractControl(new Browser()));
