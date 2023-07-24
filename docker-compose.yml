@@ -1,6 +1,9 @@
 version: '3.3'
 services:
     www:
+        networks:
+          - nginx-proxy
+        env_file: .env
         ports:
             - '8080:8080'
         volumes:
@@ -11,3 +14,6 @@ services:
                 max-size: 10m
         build: .
         command: "http-server /src/build"
+networks:
+  nginx-proxy:
+    external: true
